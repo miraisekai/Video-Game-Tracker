@@ -1,23 +1,17 @@
-/*************************************************
-* 
-* The purpose of this file is to seed your database 
-* with starter data relevant to you spplication.
-*
-**************************************************/
-
-
 const sequelize = require('../config/connection');
-// This is an example, change this
-const { YourCustomModel } = require('../models');
+const { Gamers, Games } = require('../models');
+const gamerData = require('./gamerData.json');
+const gameData = require('./gameData.json');
 
-// This is an example, change this. This json file does not exist yet.
-const customData = require('./data.json');
 
-// This is an example, change this
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
+  const gamers = await Gamers.bulkCreate(gamerData, {
+    individualHooks: true,
+    returning: true,
+  });
 
-  await YourCustomModel.bulkCreate(customData, {
+  const games = await Games.bulkCreate(gameData, {
     individualHooks: true,
     returning: true,
   });
