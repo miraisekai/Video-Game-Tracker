@@ -1,12 +1,21 @@
-
-  <body style="margin: 0; padding: 0; background: url(./pic/mainbackground.jpg); background-size: cover; background-repeat: no-repeat;background-color: #000; font-family: sans-serif;">
-  
-    <div
-      style="
+<body
+  style='
+    margin: 0;
+    padding: 0;
+    background-image: url(./views/pic/gameentrybackground.jpg) ;
+    background-size: auto;
+    background-repeat:no-repeat;
+    background-color: #000;
+    font-family: sans-serif;
+    background-position: center 10px; 
+  '
+>
+  <div
+    style='
 
         width: 320px;
-        height: 450px;
-        background: #cfcdb6;
+        height: fit;
+        background: #cecdc2;
         color: #000;
         top: 50%;
         left: 50%;
@@ -15,14 +24,13 @@
         box-sizing: border-box;
         border-radius: 20px;
         padding: 20px 30px;
-
-      "
-    >
-      <h1 style="text-align: center; font-size: 22px">Create an Account</h1>
-      <form class="loginform">
-        <input
-          style="
-
+        box-shadow: 20px 20px 20px;
+        transition: box-shadow .3s;
+      '
+  >
+        <form class="loginform">
+      <input
+        style='
             width: 100%;
             margin-bottom: 20px;
             border: none;
@@ -31,16 +39,15 @@
             outline: none;
             height: 40px;
             color: #000;
+          '
+        type='text'
+        id="signup-username"
+        name=''
+        placeholder='Enter Username'
+      />
 
-          "
-          type="text"
-          name=""
-          placeholder="First Name"
-        />
-
-        <input
-          style="
-
+      <input
+        style='
             width: 100%;
             margin-bottom: 20px;
             border: none;
@@ -49,80 +56,43 @@
             outline: none;
             height: 40px;
             color: #000;
-
-          "
-          type="date"
-          name=""
-          placeholder="Birth Month"
-        />
-
+          '
+        type='password'
+        id="signup-password"
+        name=''
+        placeholder='Enter Password'
+      />
         <input
           style="
-
-            width: 100%;
-            margin-bottom: 20px;
-            border: none;
-            border-bottom: 2px solid #000;
-            background: transparent;
-            outline: none;
-            height: 40px;
-            color: #000;
-
-          "
-          type="text"
-          name=""
-          placeholder="Enter Username"
-        />
-
-        <input
-          style="
-
-            width: 100%;
-            margin-bottom: 20px;
-            border: none;
-            border-bottom: 2px solid #000;
-            background: transparent;
-            outline: none;
-            height: 40px;
-            color: #000;
-
-          "
-          type="password"
-          name=""
-          placeholder="Enter Password"
-        />
-
-        <input
-          style="
-
             width: 100%;
             margin-bottom: 20px;
             border: none;
             outline: none;
             height: 40px;
-            background: #ec1212;
+            background: #1274ec;
             color: #fff;
+            font-family: 'Press Start 2P', cursive;
             font-size: 18px;
             border-radius: 6px;
-
           "
           type="submit"
           name=""
-          value="Sign Up"
+          id="signup-btn"
+          value="Signup"
         /><br />
-
         <a
-          href="/loginRoute"
+          href="/login"
           style="
-
-            text-decoration: none;
-            font-size: 12px;
-            line-height: 20px;
-            color: #000;
-
+            font-weight: bold;
+            font-size: 14px;
+            color: #1100ff;
           "
-          >Already have an account? Login Here!</a
+          >Login Instead</a
         >
-      </form>
-    </div>
-  </body>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="/js/signup.js"></script>
+
+</body>
