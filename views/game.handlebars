@@ -2,19 +2,20 @@
     style="
       margin: 0;
       padding: 0;
-      background: url(./pic/gameentrybackground.jpg);
-      background-size: cover;
+      background: url(images/gameentrybackground.jpg);
+      background-size: auto 1500px;
       background-color: #000;
       font-family: sans-serif;
-      
+      background-position: center 0px;
+      background-repeat: no-repeat;
     "
   >
     <div
       style="
         width: 320px;
         height: fit;
-        background: #cecdc2;
-        color: #000;
+        background: rgba(0, 0, 0, 0.8);
+        color: #0c3d0a;
         top: 50%;
         left: 50%;
         position: absolute;
@@ -22,21 +23,21 @@
         box-sizing: border-box;
         border-radius: 20px;
         padding: 50px 30px;
-        box-shadow: 20px 20px 20px;
+        box-shadow: 1px 1px 100px 1px;
       "
     >
-      <h1 style="text-align: center; font-size: 22px">Enter you game here</h1>
+      <h1 style="text-align: center; font-size: 22px; color: #fff;">Enter you game here</h1>
       <form class="loginform" onkeydown="return event.key != 'Enter';">
         <input
           style="
             width: 100%;
             margin-bottom: 20px;
             border: none;
-            border-bottom: 1px dotted #000;
+            border-bottom: 1px dotted #fff;
             background: transparent;
             outline: none;
             height: 40px;
-            color: #000;
+            color: #fff;
           "
           type="text"
           id="game-title"
@@ -48,11 +49,11 @@
             width: 100%;
             margin-bottom: 20px;
             border: none;
-            border-bottom: 1px dotted #000;
+            border-bottom: 1px dotted #fff;
             background: transparent;
             outline: none;
             height: 40px;
-            color: #000;
+            color: #fff;
           "
           type="text"
           id="game-system"
@@ -64,11 +65,11 @@
             width: 100%;
             margin-bottom: 20px;
             border: none;
-            border-bottom: 1px dotted #000;
+            border-bottom: 1px dotted #fff;
             background: transparent;
             outline: none;
             height: 40px;
-            color: #000;
+            color: #fff;
           "
           type="text"
           id="game-genre"
@@ -80,11 +81,11 @@
             width: 100%;
             margin-bottom: 20px;
             border: none;
-            border-bottom: 1px dotted #000;
+            border-bottom: 1px dotted #fff;
             background: transparent;
             outline: none;
             height: 40px;
-            color: #000;
+            color: #fff;
           "
           type="text"
           id="game-rating"
@@ -96,11 +97,11 @@
             width: 100%;
             margin-bottom: 20px;
             border: none;
-            border-bottom: 1px dotted #000;
+            border-bottom: 1px dotted #fff;
             background: transparent;
             outline: none;
             height: 40px;
-            color: #000;
+            color: #fff;
           "
           type="text"
           id="game-summary"
@@ -112,10 +113,11 @@
             width: 100%;
             margin-bottom: 20px;
             border: none;
+            border-bottom: 1px dotted #fff;
             background: transparent;
             outline: none;
             height: 40px;
-            color: #000;
+            color: #fff;
           "
           type="text"
           id="game-tips_tricks"
@@ -141,11 +143,11 @@
           value="Add Game"
         />
         <a
-          href="/home"
+          href="/"
           style="
             font-weight: bold;
             font-size: 14px;
-            color: #1100ff;
+            color: #fff;
           "
           >Home Jeeves!</a
         >
